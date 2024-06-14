@@ -22,4 +22,5 @@
 ## Scoreboard
 - View the scoreboard of participants in descending order.
 
-![Scoreboard](https://github.com/FI-Nabil/Quizify/assets/63797144/6943bb15-348b-48f5-855b-210d8a9cbdfa)
+![topscore](https://github.com/FI-Nabil/Quizify/assets/63797144/4ed0f40c-3f4e-49e3-b07b-80a7eae4ef24)
+
