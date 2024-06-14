@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymleaf.org">
+<div th:insert="fragments/header.html :: header ('/css/homePage.css', 'Home Page')"></div>
+
+<body>
+<!--- Navbar starts -->
+<div th:insert="fragments/navbar.html :: navbar"></div>
+<!--- Navbar ends -->
+<!-- Content Starts -->
+<div class="main-container container px-4 py-4">
+    <div class="grid-wrapper">
+        <div class = "left-div">
+            <img th:src="@{/images/exam.svg}" alt = "Exam image">
+        </div>
+
+        <div class = "right-div">
+            <h1>Challenge, Compete, and Learn!</h1>
+            <form class="bg-dark py-5 px-4 card" th:action="@{/quiz}" method="post">
+                <label for="username"> Enter Your Name</label>
+                <input type="text"  id="username" name="username" >
+                <p class="text-danger warning" th:if="${warning}" th:text="${warning}"></p>
+                <button type="submit" class="btn btn-warning">Start Quiz</button>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+<!-- Content ends -->
+
+<!--- Footer Starts -->
+<div th:insert="fragments/footer.html :: footer"></div>
+<!--- footer ends -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
